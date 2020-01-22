@@ -10,7 +10,7 @@ import UIKit
 
 class ButtonCell: CollectionViewCell {
     
-    let buttonIconContainer: UIImageView = {
+    lazy var buttonIconContainer: UIImageView = {
         let buttonIconContainer = UIImageView()
         buttonIconContainer.translatesAutoresizingMaskIntoConstraints = false
         buttonIconContainer.contentMode = .scaleAspectFit
@@ -24,14 +24,16 @@ class ButtonCell: CollectionViewCell {
         addSubview(buttonIconContainer)
 
         NSLayoutConstraint.activate([
-            buttonIconContainer.heightAnchor.constraint(equalToConstant: 30),
-            buttonIconContainer.widthAnchor.constraint(equalToConstant: 30),
+            buttonIconContainer.heightAnchor.constraint(equalToConstant: Configuration.buttonIconContainerSize),
+            buttonIconContainer.widthAnchor.constraint(equalToConstant: Configuration.buttonIconContainerSize),
             buttonIconContainer.centerXAnchor.constraint(equalTo: centerXAnchor),
             buttonIconContainer.centerYAnchor.constraint(equalTo: centerYAnchor)
         ])
     }
 }
 
+/// We create this subclass to ensure the DRY principle for if we would create multiple customised cells
+/// Everything that is shared between all collectionViewCells can be put in here
 class CollectionViewCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)

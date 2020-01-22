@@ -16,6 +16,7 @@
 		0B6CFA0423D7589D00A042AF /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6CFA0323D7589D00A042AF /* Icon.swift */; };
 		0B6CFA0623D7591A00A042AF /* ButtonBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6CFA0523D7591A00A042AF /* ButtonBar.swift */; };
 		0B6CFA0823D75B1C00A042AF /* ButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6CFA0723D75B1C00A042AF /* ButtonCell.swift */; };
+		0B6CFA0A23D8556000A042AF /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6CFA0923D8556000A042AF /* Configuration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		0B6CFA0323D7589D00A042AF /* Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
 		0B6CFA0523D7591A00A042AF /* ButtonBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBar.swift; sourceTree = "<group>"; };
 		0B6CFA0723D75B1C00A042AF /* ButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCell.swift; sourceTree = "<group>"; };
+		0B6CFA0923D8556000A042AF /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				0B6CFA0323D7589D00A042AF /* Icon.swift */,
+				0B6CFA0923D8556000A042AF /* Configuration.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B6CFA0A23D8556000A042AF /* Configuration.swift in Sources */,
 				0B6CFA0623D7591A00A042AF /* ButtonBar.swift in Sources */,
 				0B6CF9F123D7557800A042AF /* MainViewController.swift in Sources */,
 				0B6CF9ED23D7557800A042AF /* AppDelegate.swift in Sources */,
